@@ -1,0 +1,314 @@
+<!-- remove refresh every 10 secs-->
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UNICODE-8">
+        <meta name="viewport" content="width=device-width, 
+               intial-scale=1.0">
+        <!-- <meta http-equiv="refresh" content="10"> -->
+        <link rel="stylesheet" href="style.css"> 
+        <title>NEWS BLOG</title>
+    </head>
+
+    <body onload="mainFunc()">
+        <header>
+            <div class="header-div">
+                <h1>NEWS BLOG</h1>
+                <p id="sub-header"><b>WORLDWIDE NEWS</b></p>
+            </div>
+        </header>
+
+        <div class="menu">
+            <div class="menu-one">
+                <b>SELECT CATEGORY</b>
+                <br>
+                <select id="select-category" onchange="category()">
+                    <option value="All">All</option>
+                    <option value="International">International</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Political">Political</option>
+                </select>
+            </div>
+            <div class="menu-two">
+               <b> ALL NEWS</b>
+            </div>
+            <div class="menu-three">
+                <b id="three-heading" >SUBSCRIBE</b>
+                <br>
+                <input id="in-email" type="text" placeholder="Email Adress" pattern=".+@gmail\.com" required>
+                <button id="subscribe-btn" onclick="alert('Email Submitted !!')" type="submit">Subscribe</button>
+            </div>
+            <br>
+            <hr id="main-hr">
+        </div>
+
+       <div class="main-body"> 
+        <div class="headline" id="headline-1">
+            <div class="headline-img">
+                <img id="head-img" src="sports.webp">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading" >KL Rahul fined for slow over-rate</h3>
+                <p id="headline-subheading">Posted on <b>26 April, 2022</b> // Catergory: <b>Sports</b></p>
+                <p id="headline-text" >
+                    The Lucknow Super Giants have been fined after they maintained a slow
+                    over rate during their TATA Indian Premier League (IPL) 2022 match 
+                    against Mumbai Indians at the Wankhede Stadium, Mumbai on April 24. 
+                    This was the team’s second offence of the season under the IPL’s 
+                    Code of Conduct relating to minimum over rate offences.
+                    Lucknow Super Giants captain, KL Rahul was fined Rs 24 lakhs and the rest 
+                    of the members in the playing eleven were fined Rs 6 lakhs or 25 
+                    percent of their match fee, whichever is lower. 
+                <span id="hidden-details-1"> <br>
+                    Code of Conduct relating to minimum over rate offences.
+                    Lucknow Super Giants captain, KL Rahul was fined Rs 24 lakhs and the rest 
+                    of the members in the playing eleven were fined Rs 6 lakhs or 25 
+                    percent of their match fee, whichever is lower. </span>
+                 </p>     
+                <button id="continue-btn">
+                    <span id="cont-btn-1" onclick="show(1)">Continue Reading </span>
+                    <span id="hide-btn-1" onclick="hide(1)">Hide Details </span>
+                </button>
+            </div>
+        </div>
+        <hr class="sub-hr" id="sub-hr-1">
+
+        <div class="headline" id="headline-2">
+            <div class="headline-img">
+                <img id="head-img" src="https://images.hindustantimes.com/img/2022/04/04/550x309/TOPSHOT-SRI-LANKA-UNREST-ECONOMY-POLITICS-0_1649093834563_1649093852915.jpg">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading">Sri Lanka turmoil:</h3>
+                <p id="headline-subheading">Posted on <b>03 April, 2022</b> // Catergory: <b>International</b></p>
+                <p id="headline-text" >Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago. 
+                    Here are top developments of the crisis in the island nation.   
+                    Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago. 
+                    <span id="hidden-details-2"> <br>
+                        Here are top developments of the crisis in the island nation.   
+                    Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago.
+                     </span>
+                </p>
+                <button id="continue-btn">
+                    <span id="cont-btn-2" onclick="show(2)">Continue Reading </span>
+                    <span id="hide-btn-2" onclick="hide(2)">Hide Details </span>
+                </button>
+            </div>
+        </div>
+        <hr class="sub-hr" id="sub-hr-2">
+
+        <div class="headline" id="headline-3">
+            <div class="headline-img">
+                <img id="head-img" src="https://static.toiimg.com/thumb/msid-91176252,imgsize-23330,width-400,resizemode-4/91176252.jpg">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading">Yogi 2.0 hallmark: Communication & camaraderie </h3>
+                <p id="headline-subheading">Posted on <b>29 April, 2022</b> // Catergory: <b>Political</b></p>
+                <p id="headline-text" >
+                    LUCKNOW: Chief minister Yogi Adityanath broke several jinxes to make a comeback 
+                    to office for a record second term. Now, his swift administrative moves in the 
+                    first month of his second innings to ensure effective governance have made even 
+                    his staunch detractors, who often accuse him of being a polarising figure, not 
+                    only sit up and take notice, but also applaud in appreciation.
+                    On Thursday, MNS leader Raj Thackeray tweeted his praise: "I wholeheartedly 
+                    congratulate and stand grateful to the Yogi government for having removed the 
+                    loudspeakers from religious places, specially the masjids."
+                    <span id="hidden-details-3"> <br>
+                    "Unfortunately in Maharashtra we don't have any 'yogis'; what we have are 
+                    'bhogis' (hedonists). Here's hoping and praying good sense prevails," 
+                    the MNS chief added.  
+                        </span>
+                </p>
+                <button id="continue-btn">
+                    <span id="cont-btn-3" onclick="show(3)">Continue Reading </span>
+                    <span id="hide-btn-3" onclick="hide(3)">Hide Details </span>
+                </button>
+            </div>
+        </div>
+        <hr class="sub-hr" id="sub-hr-3">
+
+        <div class="headline" id="headline-4">
+            <div class="headline-img">
+                <img id="head-img" src="https://assets.iplt20.com/bcci/articles/1651169328__AI_1184.jpg">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading" >IPL 2022 - Match - KKR vs DC</h3>
+                <p id="headline-subheading">Posted on <b>28 April, 2022</b> // Catergory: <b>Sports</b></p>
+                <p id="headline-text" >The Delhi Capitals (DC) were back to winning ways in the TATA 
+                    Indian Premier League (IPL) 2022 after registering a victory against Kolkata 
+                    Knight Riders (KKR) by 4 wickets on Thursday at the Wankhede Stadium in 
+                    Mumbai. Kuldeep Yadav was the pick of the bowlers as he continued his 
+                    impressive run with the ball and starred with a four-wicket haul, leading 
+                    DC to a crucial victory. Chasing 147, DC lost Prithvi Shaw’s wicket on 
+                    the first ball of the innings after Umesh Yadav took a wonderful catch off 
+                    his own bowling. 
+                    <span id="hidden-details-4"> <br>
+                    Harshit Rana claimed his maiden IPL wicket to dismiss Mitchell 
+                    Marsh. David Warner was on the move with five fours and was joined by Lalit Yadav 
+                    as DC were 47/2 at the end of the powerplay. The duo stitched a fifty partnership 
+                    for the third wicket. Yadav sliced a six followed by a four as DC were 80-2 after 
+                    9 overs. Umesh Yadav got KKR back in the game with the wicket of Warner, who was 
+                    caught in the deep for 42. KKR scalped two wickets in no time to dismiss Lalit Yadav 
+                    and DC skipper Rishabh Pant. While Lalit Yadav was trapped LBW by Narine, Pant was 
+                    caught behind off Yadav’s bowling. Axar Patel hit 2 fours and a six before the 
+                    left-handed batter was run-out for 24 as DC required 34 off the final five overs. 
+                    14 runs were conceded in the 17th over after Rovman Powell whacked a four and six, 
+                    bringing DC closer to the target. 
+                    </span>
+                </p>
+                <button id="continue-btn">
+                    <span id="cont-btn-4" onclick="show(4)">Continue Reading </span>
+                    <span id="hide-btn-4" onclick="hide(4)">Hide Details </span>
+                </button>
+            </div>
+        </div>  
+        <hr class="sub-hr" id="sub-hr-4">
+
+        <div class="headline" id="headline-5">
+            <div class="headline-img">
+                <img id="head-img" src="https://www.thehindu.com/incoming/2ak8pp/article65368135.ece/alternates/FREE_1200/AP04_29_2022_000251B.jpg">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading">Russia ‘strikes’ Kyiv during UN chief’s visit </h3>
+                <p id="headline-subheading">Posted on <b>29 April, 2022</b> // Catergory: <b>International</b></p>
+                <p id="headline-text" >Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago. 
+                    Here are top developments of the crisis in the island nation.   
+                    Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago. 
+                    <span id="hidden-details-5"> <br>
+                        Reports said Prime Minister Mahinda Rajapaksa would continue to remain in office 
+                    even as all members of the Cabinet tendered their resignations to the PM a day ago. 
+                    Here are top developments of the crisis in the island nation.   
+                    Oppn slams Prez offer for unity govt, stir rages| Top points
+                    Reports said Prime Minister Mahinda Rajapaksa would continue.
+                    </span>
+                </p>
+                <button id="continue-btn">
+                    <span id="cont-btn-5" onclick="show(5)">Continue Reading </span>
+                    <span id="hide-btn-5" onclick="hide(5)">Hide Details </span>
+                </button>
+            </div>
+        </div>
+        <hr class="sub-hr" id="sub-hr-5">
+
+        <div class="headline" id="headline-6">
+            <div class="headline-img">
+                <img id="head-img" src="https://static.toiimg.com/thumb/msid-91174645,imgsize-36762,width-400,resizemode-4/91174645.jpg">
+            </div>
+            <div class="headline-content">
+                <h3 id="headline-heading">Has the Muslim-SP relationship soured in Uttar Pradesh?</h3>
+                <p id="headline-subheading">Posted on <b>27 April, 2022</b> // Catergory: <b>Political</b></p>
+                <p id="headline-text" >
+                    LUCKNOW: Chief minister Yogi Adityanath broke several jinxes to make a comeback 
+                    to office for a record second term. Now, his swift administrative moves in the 
+                    first month of his second innings to ensure effective governance have made even 
+                    his staunch detractors, who often accuse him of being a polarising figure, not 
+                    only sit up and take notice, but also applaud in appreciation.
+                    On Thursday, MNS leader Raj Thackeray tweeted his praise: "I wholeheartedly 
+                    congratulate and stand grateful to the Yogi government for having removed the 
+                    loudspeakers from religious places, specially the masjids."
+                    <span id="hidden-details-6"> <br>
+                    "Unfortunately in Maharashtra we don't have any 'yogis'; what we have are 
+                    'bhogis' (hedonists). Here's hoping and praying good sense prevails," 
+                    the MNS chief added.  
+                        </span>
+                </p>
+                <button id="continue-btn">
+                    <span id="cont-btn-6" onclick="show(6)">Continue Reading </span>
+                    <span id="hide-btn-6" onclick="hide(6)">Hide Details </span>
+                </button>
+            </div>
+        </div>
+        <hr class="sub-hr" id="sub-hr-6">
+     </div>
+        <footer>
+            <p><b> &#169; NewsFeed 2022 </b></p>
+        </footer>
+    </body>
+
+    <script>
+        function mainFunc() {
+            for(var x=1;x<=6;x++) {
+                document.getElementById('hidden-details-'+x).style.display="none";
+                document.getElementById('hide-btn-'+x).style.display="none";
+            }
+        } 
+        function show(value) {
+            document.getElementById('cont-btn-'+value).style.display="none";
+            document.getElementById('hidden-details-'+value).style.display="block";      
+            document.getElementById('hide-btn-'+value).style.display="block";
+        }
+        function hide(value) {
+            document.getElementById('hidden-details-'+value).style.display="none";
+            document.getElementById('hide-btn-'+value).style.display="none";
+            document.getElementById('cont-btn-'+value).style.display="block";
+        }
+        function category() {
+            var x = document.getElementById("select-category").value;
+            if(x=="All") {     
+                document.getElementById('headline-1').style.display = "block";
+                document.getElementById('headline-2').style.display = "block";
+                document.getElementById('headline-3').style.display = "block";
+                document.getElementById('headline-4').style.display = "block";
+                document.getElementById('headline-5').style.display = "block";
+                document.getElementById('headline-6').style.display = "block";
+                document.getElementById('sub-hr-1').style.display = "block";
+                document.getElementById('sub-hr-2').style.display = "block";
+                document.getElementById('sub-hr-3').style.display = "block";
+                document.getElementById('sub-hr-4').style.display = "block";
+                document.getElementById('sub-hr-5').style.display = "block";
+                document.getElementById('sub-hr-6').style.display = "block";
+            }  
+            else if(x=="Sports") {     
+                document.getElementById('headline-1').style.display = "block";
+                document.getElementById('headline-2').style.display = "none";
+                document.getElementById('headline-3').style.display = "none";
+                document.getElementById('headline-4').style.display = "block";
+                document.getElementById('headline-5').style.display = "none";
+                document.getElementById('headline-6').style.display = "none";
+                document.getElementById('sub-hr-1').style.display = "block";
+                document.getElementById('sub-hr-2').style.display = "none";
+                document.getElementById('sub-hr-3').style.display = "none";
+                document.getElementById('sub-hr-4').style.display = "block";
+                document.getElementById('sub-hr-5').style.display = "none";
+                document.getElementById('sub-hr-6').style.display = "none";
+            }   
+            else if(x=="International") {     
+                document.getElementById('headline-1').style.display = "none";
+                document.getElementById('headline-2').style.display = "block";
+                document.getElementById('headline-3').style.display = "none";
+                document.getElementById('headline-4').style.display = "none";
+                document.getElementById('headline-5').style.display = "block";
+                document.getElementById('headline-6').style.display = "none";
+                document.getElementById('sub-hr-1').style.display = "none";
+                document.getElementById('sub-hr-2').style.display = "block";
+                document.getElementById('sub-hr-3').style.display = "none";
+                document.getElementById('sub-hr-4').style.display = "none";
+                document.getElementById('sub-hr-5').style.display = "block";
+                document.getElementById('sub-hr-6').style.display = "none";
+            } 
+            else if(x=="Political") {     
+                document.getElementById('headline-1').style.display = "none";
+                document.getElementById('headline-2').style.display = "none";
+                document.getElementById('headline-3').style.display = "block";
+                document.getElementById('headline-4').style.display = "none";
+                document.getElementById('headline-5').style.display = "none";
+                document.getElementById('headline-6').style.display = "block";
+                document.getElementById('sub-hr-1').style.display = "none";
+                document.getElementById('sub-hr-2').style.display = "none";
+                document.getElementById('sub-hr-3').style.display = "block";
+                document.getElementById('sub-hr-4').style.display = "none";
+                document.getElementById('sub-hr-5').style.display = "none";
+                document.getElementById('sub-hr-6').style.display = "block";
+            }   
+        }
+    </script>
+</html>

@@ -1,0 +1,212 @@
+body {
+    margin: 0%;
+}
+/* -------- HEADER DIV --------- */
+header {
+    background-color: #273852;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.header-div {
+    border: 3px solid orange;
+    margin: auto;
+    background-color: white;
+    padding: 0%;
+}
+h1 {
+    letter-spacing: 1px;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    font-family: Arial;
+    font-size: 150%;
+}
+#sub-header {
+       margin-top: 1.5%;
+       line-height: 90%;
+       font-size: 60%;
+       margin-bottom: 2.5%;
+       font-family: Arial;
+       letter-spacing: 0.5px;
+}
+/* ----- SUB HEADER DIV ---------  */
+.menu {
+    width: 93%;
+    margin-right: 3.5%;
+    margin-left: 3.5%;
+    font-family: Arial;
+    margin-bottom: 0%;
+}
+.menu-one {
+    letter-spacing: 0.5%;
+}
+#select-category {
+    margin-top: 2%;
+}
+.menu-two {
+    letter-spacing: 1%;
+}
+.menu-three {
+    letter-spacing: 0.7%;
+}
+#in-email {
+    margin-top: 2%;   
+}
+#subscribe-btn {
+    margin-top: 2%;
+    background-color: #273852;
+    color: white; 
+}
+#main-hr {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+/* ------ HEADLINES DIV ------ */
+.headline {
+ margin: 0% 3.5% 0% 3.5%;
+ width: 93%;
+}
+.headline-img {
+ margin-bottom: 1.5%; 
+}
+#head-img {
+ width: 90%;
+ height: 180px;
+}
+.headline-content {
+ height: 100%;
+ font-family: Arial, sans-serif;
+}
+#headline-heading {
+ margin: 0%; 
+ padding: 0%;   
+}
+#headline-subheading {
+ margin: 0.5% 0% 1% 0%;
+ padding: 0%;
+}
+#headline-text {
+ margin: 0%;
+ font-size: 100%;
+ line-height: 110%;
+}
+#continue-btn {
+ margin-top: 1%;
+ height: 18%;
+ padding: 0.5%;
+ background-color: orangered;
+ color: white;
+ letter-spacing: 0.5px;
+ margin-bottom: 2.5%; /* to fix sub-hr */
+}
+.sub-hr {
+ margin: 0% 3.5% 1.5% 3.5%;
+ width: 80%;
+}
+/* ----- TABLET, DESKTOP BREAKPOINTS ------ */
+@media screen and (min-width:481px) { 
+    .header-div {
+        width: 21%;
+    }
+    .menu-one {
+        float: left;
+        width: 33.33%;
+        font-size: 80%;
+    }
+    #select-category {
+        width: 55%;
+    }
+    .menu-two {
+        float: left;
+        width: 33.33%;
+        margin-top: 0.6%;
+        font-size: 160%;
+        text-align: center;
+    }
+    .menu-three {
+        float: left;
+        width: 33.33%;
+        font-size: 80%;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+    #in-email {
+        width: 35%;    
+    }
+    .headline-img {
+         width: 20%;
+         float: left;
+    }
+    .headline-content {
+         width: 65%;
+         float: left;
+    }
+    #headline-subheading {        
+        font-size: 90%;
+       }
+    #continue-btn {
+        width: 23%;
+       }
+    .main-body {
+        margin-bottom: 5%;
+    }
+}
+/* ------ MOBILE BREAKPOINTS ------- */
+@media screen and (max-width:480px) { /* for mobile */
+    .header-div {
+        width: 25%;
+    }
+    .menu-one {
+        width: 40%;
+        margin-top: 3%;
+        font-size: 60%;
+    }
+    #select-category {
+        width: 90%;
+    }
+    .menu-two {
+        width: 50%;
+        margin: 3% 0%;
+        font-size: 130%;
+    }
+    .menu-three {
+        width: 100%;
+        font-size: 65%;
+        margin-bottom: 0%;
+        letter-spacing: 0.5px;
+       /* background-color: bisque;*/
+    }
+    #in-email {
+        width: 34%; 
+    }
+    .headline-img {
+         width: 70%;
+    }
+    .headline-content {       
+         width: 75%;
+    }
+    #headline-subheading {        
+        font-size: 70%;
+       }
+    #continue-btn {
+        width: 55%;
+        font-size: 80%;
+       }
+    .main-body {
+        margin-bottom: 16%;
+    }
+}
+
+footer {
+    background-color: #273852;
+    text-align: center;
+    color: white;
+    padding: 0%;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    letter-spacing: 1px;
+}
